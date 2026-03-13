@@ -6,8 +6,6 @@
 #SBATCH -t 00:05:00
 #SBATCH --output=fibonacci_%j.out
 
-module load python/3.11.4
-
 python << 'EOF'
 def fibonacci(n):
     a, b = 0, 1
